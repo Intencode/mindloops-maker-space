@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <title>Mindloops Maker Space</title>
+        <style>
+
+            * {
+                margin: 0;
+            }
+
+            body {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .page-navbar {
+                width: 100%;
+                background-color: #d5ebff;
+            }
+
+            .page-navbar ul {
+                padding: 1.5em 5em;
+                display: flex;
+                flex-direction: row;
+
+                list-style: none;
+
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .btn-cta {
+                box-sizing: border-box;
+                width: fit-content;
+                padding: 1em 1.5em;
+                background-color: #FFF;
+                border-radius: 4vh;
+                border: #5d95c9 2px solid;
+                color: #000000;
+                font-size: 18px;
+
+                transition: all 0.2s ease-in;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .header-logo {
+                width: 6em;
+                height: auto;
+            }
+
+            .hero {
+                width: 100%;
+                height: 70vh;
+
+                
+            }
+
+            .hero-img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: cover;
+                filter: blur(4px);
+                z-index: -1;
+            }
+
+            .hero-ab {
+                position: relative;
+
+                height: 100%;
+            }
+
+            .hero-content {
+                padding: 5em;
+            }
+
+            .hero-container {
+                position: absolute;
+                top: 0;
+            }
+
+            .hero-headline {
+                font-size: 5em;
+
+                color: #FFFFFF;
+            }
+
+            .btn-cta .cta-move {
+                transition: all 1s;
+            }
+
+            .cta-move {
+                font-size: 2em;
+            }
+            
+            .btn-cta:hover {
+                background-color: #d5ebff;
+                color: #214669;
+            }
+
+            .btn-cta:hover .cta-move {
+                transform: translateX(10px);
+                color: #5d95c9;
+            } 
+
+            .page-content {
+                background-color: #d5ebff;
+            }
+
+            .content-container {
+                padding: 5em
+            }
+
+            .content-title {
+                font-size: 48px;
+                color: #214669;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .partner-img {
+                height: 3em;
+                width: 3em;
+                object-fit: contain;
+                padding: 0.5em;
+                background-color: #FFFFFF;
+                gap: 2;
+                border-radius: 1em;
+            }
+
+            .partner-list {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0;
+            }
+
+            .partners-container {
+                padding-top: 2em;
+            }
+
+            .partner {
+                padding: 1em;
+                display: flex;
+                flex-direction: row;
+                gap: 2em;
+                align-items: center;
+                background-color: #a0cbf3;
+                border-radius: 1em;
+            }
+
+            .subtext {
+                font-weight: 300;
+            }
+
+            .countdown-timer {
+                padding: 2em;
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                align-items: center;
+                background-color: #d5ebff;
+                border-radius: 1em;
+
+                margin: 2em 0;
+            }
+
+            #event-countdown {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+            }
+
+            .countdown-cal {
+                padding: 1em;
+                background-color: #ffc14e;
+                border-radius: 1em;
+            }
+
+            #countdown {
+                background-color: #ffe49a;
+            }
+
+            #aliff-cha {
+                width: 40%;
+                position: absolute;
+            }
+            
+            #scilab {
+                width: 80%;
+            }
+
+            .aliff-imgs {
+                position: relative;
+                margin: 0 auto;
+            }
+
+            .break-into {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2em;
+                align-items: center;
+            }
+
+            .task-list {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .task-list li {
+                padding: 0.5em;
+                background-color: #ffc14e;
+                color: #214669;
+                border-radius: 1em;
+
+            }
+
+            .themes-list {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                list-style: none;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+
+            .themes-list li {
+                padding: 1em;
+                background-color: #a0cbf3;
+                border-radius: 1em;
+            }
+
+            .faq {
+                padding: 1em;
+                background-color: #a0cbf3;
+                border-radius: 1em;
+            }
+
+            .faq h2 {
+                font-weight: 600;
+                color: #ffffff;
+            }
+
+            .faqs {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            footer {
+                padding: 5em 5em 10em 5em;
+            }
+
+            .footer-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-direction: row;
+                gap: 2em;
+            }
+
+            .footer-links a {
+                text-decoration: underline;
+            }
+
+        </style>
+
+        <script>
+            var countDownDate = new Date("Nov 24, 2024 08:00:00").getTime();
+            
+            var x = setInterval(function() {
+            
+                var now = new Date().getTime();
+                
+                var distance = countDownDate - now;
+                
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById("c-days").innerHTML = String(days).padStart(2, '0');
+                document.getElementById("c-hours").innerHTML = String(hours).padStart(2, '0');
+                document.getElementById("c-minutes").innerHTML = String(minutes).padStart(2, '0');
+                document.getElementById("c-seconds").innerHTML = String(seconds).padStart(2, '0');
+                
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    
+    </head>
+
+    <body>
+        <div class="page">
+            <div class="page-head">
+                <div class="page-navbar">
+                    <ul class="navbar">
+                        <li>
+                            <img class="header-logo" src="img/MakerSpaceLogo.png">
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://forms.office.com/pages/responsepage.aspx?id=yQU9xdMZPU67a9YDC1bOWDpjLUtbPQ9Mp4fenDgbFfdUMUI2VDExVFVMUjA1TkIwNENWS1JET045Mi4u">
+                                <div class="btn-cta">
+                                    Join Now
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero">
+                    <div class="hero-ab">
+                        <img class="hero-img" src="img/hero.png">
+                        <div class="hero-container">
+                            <div class="hero-content">
+                                <h1 class="hero-headline">
+                                    Unleash your creativity with <br>MindLoops® Maker Space 2024
+                                </h1>
+                                <br>
+                                <a target="_blank" href="https://mindloops.org/">
+                                    <div class="btn-cta">
+                                        <div style="display: flex; flex-direction: row; gap: 1em; align-items: center;">Register now, it's free!<div class="cta-move">></div></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="content-container">
+                    <div id="event-partners">
+                        <h1 class="content-title">Official Event Partners</h1>
+                        <br>
+                        <div>
+                            <h2 class="subtext">This event is made possible by our partners</h2>
+                        </div>
+                        <div class="partners-container">
+                            <ul class="partner-list">
+                                <li class="partner">
+                                    <img class="partner-img" src="img/edess.jpg">
+                                    <h4 class="subtext">EDESS <br><span style="color: #214669;"><i>Organiser</i></span></h3>
+                                </li>
+                                <li class="partner">
+                                    <img class="partner-img" src="img/UTM.png">
+                                    <h4 class="subtext">Universiti Teknologi Malaysia</h3>
+                                </li>
+                                <li class="partner">
+                                    <img class="partner-img" src="img/JPNJ.png">
+                                    <h4 class="subtext">Jabatan Pendidikan Negeri Johor</h3>
+                                </li>
+                                <li class="partner">
+                                    <img class="partner-img" src="img/YayasanJCorp.png">
+                                    <h4 class="subtext">Yayasan JCorp</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="countdown" class="content-container">
+                    <div id="event-countdown">
+                        <h1 class="content-title">Event Countdown</h1>
+                        <br>
+                        <div>
+                            <h2 class="subtext">We're excited to organise the <span>first</span> edition of the MindLoops® Maker Space in Johor!</h2>
+                        </div>
+                        <div class="countdown-timer">
+                            <div class="countdown-cal">
+                                <h2 class="content-title" id="c-days"></h2>
+                                <p>Days</p>
+                            </div>
+                            <h2 class="content-title">:</h2>
+                            <div class="countdown-cal">
+                                <h2 class="content-title" id="c-hours"></h2>
+                                <p>Hours</p>
+                            </div>
+                            <h2 class="content-title">:</h2>
+                            <div class="countdown-cal">
+                                <h2 class="content-title" id="c-minutes"></h2>
+                                <p>Minutes</p>
+                            </div>
+                            <h2 class="content-title">:</h2>
+                            <div class="countdown-cal">
+                                <h2 class="content-title" id="c-seconds"></h2>
+                                <p>Seconds</p>
+                            </div>
+                        </div>
+                        <h2 class="subtext">Event Location: </h2>
+                        <br>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d705.0474089449305!2d103.6255716744634!3d1.5542504010524407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da77e0c4a252ed%3A0x13bcc26d6c84dc27!2sUTM%20Innovation%20and%20Commercialisation%20Centre!5e0!3m2!1sen!2smy!4v1721722441571!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div id="main-activities">
+                        <div class="break-into">
+                            <div>
+                                <img class="header-logo" src="img/MakerSpaceLogo.png">
+                                <br>
+                                <h1 class="content-title">Main Activities</h1>
+                                <br>
+                                <div>
+                                    <h2 class="subtext">Are you Malaysia's next best bright kids?</h2>
+                                </div>
+                                <br>
+                                <div>
+                                    <p>MindLoops® Maker Space is looking for a team of 5 kids who have what it takes to develop solutions for our local businesses.</p>
+                                </div>
+                                <br>
+                                <div>
+                                    <h2 class="subtext">What is MindLoops® Maker Space?</h2>
+                                </div>
+                                <br>
+                                <div>
+                                    <p>MindLoops® Maker Space is a hands-on collaborative program that brings together like-minded students to co-develop a prototype by using concepts from STEM and technical skills from TVET.</p>
+                                </div>
+                                <br>
+                                <div>
+                                    <h2 class="subtext">How can I participate?</h2>
+                                </div>
+                                <br>
+                                <div>
+                                    <ol class="task-list">
+                                        <li>Simply form a group of 5 from members of your school to participate. Remember to bring your teacher to support you! </li>
+                                        
+                                        <li>Work together with your team to develop the idea and concept to produce a prototype based on the themes selected.  </li>
+
+                                        <li>Submit your brilliant idea and concept for our juries to assess.  </li>
+
+                                        <li>Selected teams will be invited to join the main event.  </li>
+
+                                        <li>Unleash your creativity by developing the prototype on the event day.  </li>
+
+                                        <li>Present your wonderful prototype to our judges.  </li>
+
+                                        <li>Winners will be awarded prizes! </li>
+                                    </ol>
+                                </div>
+                                <br>
+                                <div>
+                                    <h2 class="subtext">Themes</h2>
+                                </div>
+                                <br>
+                                <div>
+                                    <ul class="themes-list">
+                                        <li>Eco-friendly innovations </li>
+
+                                        <li>Healthy living solutions </li>
+        
+                                        <li>Sustainable gardening </li>
+        
+                                        <li>Fashion and accessories </li>
+        
+                                        <li>Wildlife and nature conversation </li>
+        
+                                        <li>Energy efficiency </li>
+        
+                                        <li>Recycling and upcycling </li>
+        
+                                        <li>Water conservation </li>
+        
+                                        <li>Environmental awareness </li>
+        
+                                        <li>Community impact projects </li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <a target="_blank" href="https://forms.office.com/pages/responsepage.aspx?id=yQU9xdMZPU67a9YDC1bOWDpjLUtbPQ9Mp4fenDgbFfdUMUI2VDExVFVMUjA1TkIwNENWS1JET045Mi4u">
+                                    <div class="btn-cta">
+                                        <div style="display: flex; flex-direction: row; gap: 1em; align-items: center;">Join our programme to participate <div class="cta-move">></div></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="aliff-imgs">
+                                <img id="aliff-cha" src="img/Mindloops ALIFF_6.png">
+                                <img id="scilab" src="img/science-lab-objects.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-container">
+                    <div id="faqs">
+                        <h1 class="content-title">Frequently Asked Questions</h1>
+                        <br>
+                        <div class="faqs">
+                            <div class="faq">
+                                <h2 class="subtext">Who can join the contest? </h2>
+                                <br>
+                                <p>All primary school children across Johor who are aged 10 to 12 years old are encouraged to participate in the event.  </p>
+                                <br>
+                            </div>
+                            <div class="faq">
+                                <h2 class="subtext">Is there any registration fee?  </h2>
+                                <br>
+                                <p>No, it’s free to register the teams.  </p>
+                                <br>
+                            </div>
+                            <div class="faq">
+                                <h2 class="subtext">How many students per team and how many teams can a school send?  </h2>
+                                <br>
+                                <p>Each team consists of 4 team members from one school. Each school may submit multiple teams to participate. However, not all teams will be selected to participate.  </p>
+                                <br>
+                            </div>
+                            <div class="faq">
+                                <h2 class="subtext">When is the event and the location?  </h2>
+                                <br>
+                                <p>The event date is 24 November 2024 at (location TBC).  </p>
+                                <br>
+                            </div>
+                            <div class="faq">
+                                <h2 class="subtext">How to register?  </h2>
+                                <br>
+                                <p>Interested teams are encouraged to submit their application to this form (open until 7 September 2024).  </p>
+                                <br>
+                            </div>
+                            <div class="faq">
+                                <h2 class="subtext">Can I invite my family to attend the competition?  </h2>
+                                <br>
+                                <p>Yes, you may invite your family members to attend the event as the attendees (Free Admission).  </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-info">
+                <div>
+                    <h2>EDESS Sdn. Bhd.</h2>
+                    <br>
+                    <img class="header-logo" src="img/MakerSpaceLogo.png">
+
+                </div>
+                <div class="footer-links">
+                    <a>Privacy Policy</a>
+                    <a>Terms & Conditions</a>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
