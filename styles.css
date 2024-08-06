@@ -37,7 +37,7 @@ body {
     padding: 1em 1.5em;
     background-color: #FFF;
     border-radius: 4vh;
-    border: #5d95c9 2px solid;
+    border: #d33b73 2px solid;
     color: #000000;
     font-size: 18px;
 
@@ -125,7 +125,7 @@ a {
 }
 
 .btn-cta:hover {
-    background-color: #d5ebff;
+    background-color: #fde4ff;
     color: #214669;
 }
 
