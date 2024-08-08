@@ -1,4 +1,12 @@
 
+:root {
+    --c1: #FF8343;
+    --c2: #F1DEC6;
+    --c3: #179BAE;
+    --c4: #4158A6;
+    
+}
+
 * {
     margin: 0;
 }
@@ -37,7 +45,7 @@ body {
     padding: 1em 1.5em;
     background-color: #FFF;
     border-radius: 4vh;
-    border: #d33b73 2px solid;
+    border: var(--c1) 2px solid;
     color: #000000;
     font-size: 18px;
 
@@ -45,7 +53,7 @@ body {
 }
 
 .page-navbar-bg .nav-item {
-    color: #214669;
+    color: var(--c4);
 }
 
 .nav-item {
@@ -58,8 +66,8 @@ body {
 }
 
 .nav-item:hover {
-    color: #5d95c9;
-    background-color: #FFFFFF;
+    color: var(--c4);
+    background-color: var(--c2);
 }
 
 a {
@@ -125,13 +133,13 @@ a {
 }
 
 .btn-cta:hover {
-    background-color: #fde4ff;
-    color: #214669;
+    background-color: var(--c2);
+    color: #000;
 }
 
 .btn-cta:hover .cta-move {
     transform: translateX(10px);
-    color: #5d95c9;
+    color: var(--c4);
 } 
 
 .page-content {
@@ -152,11 +160,19 @@ a {
 }
 
 #event-partners-sect {
-    background: linear-gradient(270deg, #ffe49a 0%, #ff9abf 100%);
+    /* background: linear-gradient(270deg, #ffe49a 0%, #ff9abf 100%); */
+
+    background-color: var(--c2);
 }
 
 #main-activities-sect {
-    background: linear-gradient(235deg, #d5ebff 0%, #f3a0fa 100%);
+    /* background: linear-gradient(235deg, #d5ebff 0%, #f3a0fa 100%); */
+    background-color: var(--c1);
+    color: var(--c2);
+}
+
+#main-activities-sect h1 {
+    color: var(--c2);
 }
 
 #tentative {
@@ -193,12 +209,8 @@ a {
     flex-direction: row;
     gap: 1em;
     align-items: center;
-    border: 2px #d33b73 solid;
+    border: 2px var(--c1) solid;
     border-radius: 1em;
-}
-
-#event-partners h1 {
-    color: #ffffff;
 }
 
 .subtext {
@@ -226,12 +238,12 @@ a {
 
 .countdown-cal {
     padding: 1em;
-    background-color: #fbe0ae;
+    background-color: var(--c2);
     border-radius: 1em;
 }
 
 #countdown {
-    background-color: #FFF5DA;
+    background-color: var(--c2);
 }
 
 #aliff-cha {
@@ -263,8 +275,9 @@ a {
 
 .task-list li {
     padding: 0.5em;
-    background: linear-gradient(90deg, #faa0f2 0%, #faf1a0 100%);
-    color: #214669;
+    /* background: linear-gradient(90deg, #faa0f2 0%, #faf1a0 100%); */
+    background-color: var(--c2);
+    color: var(--c4);
     border-radius: 1em;
 
 }
@@ -280,7 +293,9 @@ a {
 
 .themes-list li {
     padding: 1em;
-    background: linear-gradient(90deg, #faa0f2 0%, #faf1a0 100%);
+    /* background: linear-gradient(90deg, #faa0f2 0%, #faf1a0 100%); */
+    background-color: var(--c2);
+    color: var(--c4);
     border-radius: 1em;
 }
 
