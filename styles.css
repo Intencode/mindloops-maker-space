@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .page-navbar {
@@ -172,7 +172,7 @@ a {
 }
 
 #main-activities-sect h1 {
-    color: var(--c2);
+    color: #ffffff;
 }
 
 #tentative {
