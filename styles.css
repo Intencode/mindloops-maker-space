@@ -251,7 +251,6 @@ a {
 }
 
 .partners-container {
-    padding-top: 2em;
 }
 
 .partner {
@@ -304,7 +303,9 @@ a {
 }
 
 #aliff-cha {
-    width: 10em;
+    width: 60%;
+
+    margin-left: 3em;
 }
 
 #about-sect {
