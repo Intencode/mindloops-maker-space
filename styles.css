@@ -173,6 +173,7 @@ a {
 #event-partners-sect {
     /* background: linear-gradient(270deg, #ffe49a 0%, #ff9abf 100%); */
 
+    /* background-color: #ECF9FF; */
     background-color: #ECF9FF;
 }
 
@@ -276,6 +277,7 @@ a {
     align-items: center;
     /* border: 2px var(--c1) solid; */
     /* border-radius: 1em; */
+    border-radius: 0;
 }
 
 .subtext {
