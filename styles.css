@@ -230,12 +230,6 @@ a {
 
 /* resize programme-stages for phones */
 
-@media (max-width: 768px) {
-    #programme-stages {
-        grid-template-columns: 1fr;
-    }
-}
-
 .programme-stage {
     background-color: #ECF9FF;
     padding: 2em 1em;
@@ -270,8 +264,6 @@ a {
     padding: 0;
 }
 
-.partners-container {
-}
 
 .partner {
     /* padding: 1em; */
@@ -349,13 +341,6 @@ a {
     align-items: center;
 }
 
-
-@media only screen and (max-width: 1000px) {
-    .break-into {
-        grid-template-columns: 1fr;
-    }
-}
-
 .task-list {
     display: flex;
     flex-direction: column;
@@ -409,8 +394,9 @@ a {
     /* background: linear-gradient(90deg, #faa0f2 0%, #faf1a0 100%); */
     background-color: var(--c2);
     border-radius: 1em;
-    height: 2rem;
+    min-height: 3rem;
     vertical-align: middle;
+    color: #FFF !important;
 }
 
 .faq {
@@ -449,7 +435,9 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    justify-items: center;
+    align-items: center;
+    gap: 2em;   
 }
 
 .footer-links a {
@@ -488,4 +476,23 @@ hr {
 
 .footer-logo {
     height: 3em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .break-into {
+        grid-template-columns: 1fr;
+    }
+
+    #programme-stages {
+        grid-template-columns: 1fr;
+    }
+
+    .themes-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #programme-highlights {
+        flex-direction: column;
+        align-items: center;
+    }
 }
