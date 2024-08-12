@@ -149,7 +149,7 @@ a {
 } 
 
 .page-content {
-    background-color: #d5ebff;
+    /* background-color: #d5ebff; */
 }
 
 .content-container {
@@ -162,7 +162,7 @@ a {
 }
 
 #how-to-sect {
-    background-color: #FFF;
+    background-color: transparent;
     z-index: -1;
 }
 
@@ -173,7 +173,7 @@ a {
 #event-partners-sect {
     /* background: linear-gradient(270deg, #ffe49a 0%, #ff9abf 100%); */
 
-    background-color: #FFF;
+    background-color: #ECF9FF;
 }
 
 #main-activities-sect {
@@ -188,7 +188,7 @@ a {
 }
 
 #main-activities-sect h1 {
-    color: #000;
+    color: #214669;
     z-index: 2;
 }
 
@@ -221,6 +221,14 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
+}
+
+/* resize programme-stages for phones */
+
+@media (max-width: 768px) {
+    #programme-stages {
+        grid-template-columns: 1fr;
+    }
 }
 
 .programme-stage {
@@ -389,6 +397,8 @@ a {
     /* background: linear-gradient(90deg, #faa0f2 0%, #faf1a0 100%); */
     background-color: var(--c2);
     border-radius: 1em;
+    height: 2rem;
+    vertical-align: middle;
 }
 
 .faq {
