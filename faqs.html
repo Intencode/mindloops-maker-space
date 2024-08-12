@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="styles.css">
 
     <script>
-        function showFaq() {
-
-        } 
+        //function to show faq on click
+        function showFaq(el) {
+            let faq = document.getElementById(el);
+            if (faq.style.display === "block") {
+                faq.style.display = "none";
+            } else {
+                faq.style.display = "block";
+            }
+        }
     </script>
 </head>
 <body>
@@ -26,58 +32,72 @@
                     </li>
                     <li>
                         <a class="nav-item" href="./programme.html">
-                            Programme
+                            Program
                         </a>
                         <a class="nav-item" href="./tentative.html">
-                            Itinerary
+                            Atur Cara
                         </a>
                         <a class="nav-item" href="./faqs.html">
-                            FAQs
+                            Soalan
                         </a>
-                        <a class="nav-item" href="en/index.html"><img class="" style="width: 1em;" src="img/lang.svg"> MY</a>
+                        <a class="nav-item" href="en/faqs.html"><img class="" style="width: 1em;" src="img/lang.svg"> MY</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="content-container">
             <div id="faqs">
-                <h1 class="content-title">Frequently Asked Questions</h1>
+                <h1 class="content-title">Soalan Lazim</h1>
+                <br>
+                <br>
                 <br>
                 <div class="faqs">
                     <div class="faq">
-                        <h2 class="subtext">Who can join the contest? </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">Siapa yang boleh menyertai pertandingan ini?</h2>
+                            <button class="faq-button" onclick="showFaq('s1')"><img src="img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>All primary school children across Johor who are aged 10 to 12 years old are encouraged to participate in the event.  </p>
-                        <br>
-                    </div>
-                    <div class="faq">
-                        <h2 class="subtext">Is there any registration fee?  </h2>
-                        <br>
-                        <p>No, it’s free to register the teams.  </p>
+                        <p id="s1" style="display: none;">Semua pelajar sekolah rendah di Negeri Johor yang berumur 10 hingga 12 tahun digalakkan untuk menyertai. </p>
                         <br>
                     </div>
                     <div class="faq">
-                        <h2 class="subtext">How many students per team and how many teams can a school send?  </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">Apakah terdapat yuran pendaftaran?</h2>
+                            <button class="faq-button" onclick="showFaq('s2')"><img src="img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>Each team consists of 4 team members from one school. Each school may submit multiple teams to participate. However, not all teams will be selected to participate.  </p>
-                        <br>
-                    </div>
-                    <div class="faq">
-                        <h2 class="subtext">When is the event and the location?  </h2>
-                        <br>
-                        <p>The event date is 24 November 2024 at (location TBC).  </p>
+                        <p id="s2" style="display: none;">Tiada, pendaftaran adalah percuma.</p>
                         <br>
                     </div>
                     <div class="faq">
-                        <h2 class="subtext">How to register?  </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">Berapa bilangan murid bagi setiap kumpulan dan berapa banyak kumpulan yang boleh dihantar oleh setiap sekolah?</h2>
+                            
+                            <button class="faq-button" onclick="showFaq('s3')"><img src="img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>Interested teams are encouraged to submit their application to this form (open until 7 September 2024).  </p>
+                        <p id="s3" style="display: none;">Setiap kumpulan terdiri daripada 4 murid sahaja dan diiringi oleh 1 guru penasihat. Sekolah boleh menghantar beberapa kumpulan, tetapi tidak semua kumpulan akan terpilih bergantung kepada pemilihan juri.</p>
                         <br>
                     </div>
                     <div class="faq">
-                        <h2 class="subtext">Can I invite my family to attend the competition?  </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">Bilakah acara ini akan diadakan dan di mana lokasinya?</h2>
+
+                            <button class="faq-button" onclick="showFaq('s4')"><img src="img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>Yes, you may invite your family members to attend the event as the attendees (Free Admission).  </p>
+                        <p id="s4" style="display: none;">Acara ini akan diadakan pada 24 November 2024. Lokasinya akan disahkan kemudian.</p>
+                        <br>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-block">
+                            <h2 class="subtext">Bolehkah saya menjemput keluarga saya untuk menghadiri pertandingan ini?</h2>
+
+                            <button class="faq-button" onclick="showFaq('s6')"><img src="img/add.svg"></button>
+                        </div>
+                        <br>
+                        <p id="s6" style="display: none;">Ya, ahli keluarga boleh menghadiri pertandingan ini secara percuma. </p>
                     </div>
                 </div>
             </div>  

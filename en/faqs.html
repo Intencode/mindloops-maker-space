@@ -4,18 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon">
     <title>FAQs</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+
+    <script>
+        //function to show faq on click
+        function showFaq(el) {
+            let faq = document.getElementById(el);
+            if (faq.style.display === "block") {
+                faq.style.display = "none";
+            } else {
+                faq.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="page">
         <div class="page-head">
-            <div class="page-navbar">
+            <div class="page-navbar-bg">
                 <ul class="navbar">
                     <li>
-                        <a href="./maker-space.html">
-                            <img class="header-logo" src="img/MakerSpaceLogo.png">
+                        <a href="./index.html">
+                            <img class="header-logo" src="../img/MakerSpaceLogo.png">
                         </a>
                     </li>
                     <li>
@@ -28,6 +40,7 @@
                         <a class="nav-item" href="./faqs.html">
                             FAQs
                         </a>
+                        <a class="nav-item" href="../faqs.html"><img class="" style="width: 1em;" src="../img/lang.svg"> EN</a>
                     </li>
                 </ul>
             </div>
@@ -36,41 +49,55 @@
             <div id="faqs">
                 <h1 class="content-title">Frequently Asked Questions</h1>
                 <br>
+                <br>
+                <br>
                 <div class="faqs">
                     <div class="faq">
-                        <h2 class="subtext">Who can join the contest? </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">Who can join the contest? </h2>
+                            <button class="faq-button" onclick="showFaq('s1')"><img src="../img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>All primary school children across Johor who are aged 10 to 12 years old are encouraged to participate in the event.  </p>
-                        <br>
-                    </div>
-                    <div class="faq">
-                        <h2 class="subtext">Is there any registration fee?  </h2>
-                        <br>
-                        <p>No, it’s free to register the teams.  </p>
+                        <p id="s1" style="display: none;">All primary school children across Johor who are aged 10 to 12 years old are encouraged to participate in the event.  </p>
                         <br>
                     </div>
                     <div class="faq">
-                        <h2 class="subtext">How many students per team and how many teams can a school send?  </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">Is there any registration fee?  </h2>
+                            <button class="faq-button" onclick="showFaq('s2')"><img src="../img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>Each team consists of 4 team members from one school. Each school may submit multiple teams to participate. However, not all teams will be selected to participate.  </p>
-                        <br>
-                    </div>
-                    <div class="faq">
-                        <h2 class="subtext">When is the event and the location?  </h2>
-                        <br>
-                        <p>The event date is 24 November 2024 at (location TBC).  </p>
+                        <p id="s2" style="display: none;">No, it’s free to register the teams.  </p>
                         <br>
                     </div>
                     <div class="faq">
-                        <h2 class="subtext">How to register?  </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">How many students per team and how many teams can a school send?  </h2>
+                            
+                            <button class="faq-button" onclick="showFaq('s3')"><img src="../img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>Interested teams are encouraged to submit their application to this form (open until 7 September 2024).  </p>
+                        <p id="s3" style="display: none;">Each team consists of 4 team members from one school. Each school may submit multiple teams to participate. However, not all teams will be selected to participate.  </p>
                         <br>
                     </div>
                     <div class="faq">
-                        <h2 class="subtext">Can I invite my family to attend the competition?  </h2>
+                        <div class="faq-block">
+                            <h2 class="subtext">When is the event and the location?  </h2>
+
+                            <button class="faq-button" onclick="showFaq('s4')"><img src="../img/add.svg"></button>
+                        </div>
                         <br>
-                        <p>Yes, you may invite your family members to attend the event as the attendees (Free Admission).  </p>
+                        <p id="s4" style="display: none;">The event date is 24 November 2024 at (location TBC).  </p>
+                        <br>
+                    </div>
+                    <div class="faq">
+                        <div class="faq-block">
+                            <h2 class="subtext">Can I invite my family to attend the competition?  </h2>
+
+                            <button class="faq-button" onclick="showFaq('s6')"><img src="../img/add.svg"></button>
+                        </div>
+                        <br>
+                        <p id="s6" style="display: none;">Yes, you may invite your family members to attend the event as the attendees (Free Admission).  </p>
                     </div>
                 </div>
             </div>  
@@ -80,9 +107,9 @@
         <div class="footer-info">
             <div>
                 <div class="footer-logo-list">
-                    <img class="footer-logo" src="img/MakerSpaceLogo.png">
-                    <a href="https://mindloops.org"><img class="footer-logo" src="img/mindloops.png"></a>
-                    <img class="footer-logo" src="img/wordmark.png">
+                    <img class="footer-logo" src="../img/MakerSpaceLogo.png">
+                    <a href="https://mindloops.org"><img class="footer-logo" src="../img/mindloops.png"></a>
+                    <img class="footer-logo" src="../img/wordmark.png">
                 </div>
             </div>
         </div>
