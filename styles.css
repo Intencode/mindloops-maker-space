@@ -18,6 +18,10 @@ body {
     min-height: 100vh;
 }
 
+.page {
+    min-height: 100vh;
+}
+
 .page-navbar {
     width: 100%;
     /* background-color: #d5ebff; */
