@@ -290,8 +290,12 @@ a {
 
 #aliff-cha {
     width: 40%;
-    position: absolute;
 }
+
+#about-sect {
+    background-color: #FFF;
+}
+
 
 #scilab {
     width: 80%;
