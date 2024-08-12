@@ -161,6 +161,11 @@ a {
     color: #214669;
 }
 
+#how-to-sect {
+    background-color: #FFF;
+    z-index: -1;
+}
+
 .text-center {
     text-align: center;
 }
@@ -177,11 +182,14 @@ a {
 
     padding: 10em 5em 5em 5em;
     background-image: url('img/Vector.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     /* color: var(--c2); */
 }
 
 #main-activities-sect h1 {
     color: #000;
+    z-index: 2;
 }
 
 .center-out {
@@ -303,7 +311,7 @@ a {
 }
 
 #aliff-cha {
-    width: 60%;
+    width: 50%;
 
     margin-left: 3em;
 }
