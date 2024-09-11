@@ -1,193 +1,224 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" href="img/icon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        <title>Mindloops Maker Space</title>
-        <link rel="stylesheet" href="styles.css">
-        <script>
-            var countDownDate = new Date("Nov 24, 2024 08:00:00").getTime();
-            
-            var x = setInterval(function() {
-            
-                var now = new Date().getTime();
-                
-                var distance = countDownDate - now;
-                
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                document.getElementById("c-days").innerHTML = String(days).padStart(2, '0');
-                document.getElementById("c-hours").innerHTML = String(hours).padStart(2, '0');
-                document.getElementById("c-minutes").innerHTML = String(minutes).padStart(2, '0');
-                document.getElementById("c-seconds").innerHTML = String(seconds).padStart(2, '0');
-                
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "EXPIRED";
-                }
-            }, 1000);
-        </script>
-    
-    </head>
 
-    <body>
-        <div class="page">
-            <div class="page-head">
-                <div class="hero">
-                    <div class="hero-ab">
-                        <div class="hero-nbg">
-                            <div class="page-navbar">
-                                <ul class="navbar">
-                                    <li>
-                                        <a href="./index.html">
-                                            <img class="header-logo" src="img/MakerSpaceLogo.png">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-item" href="./programme.html">
-                                            Program
-                                        </a>
-                                        <a class="nav-item" href="./tentative.html">
-                                            Atur Cara
-                                        </a>
-                                        <a class="nav-item" href="./faqs.html">
-                                            Soalan
-                                        </a>
-                                        <a class="nav-item" href="en/index.html"><img class="" style="width: 1em;" src="img/lang.svg"> MY</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="hero-container">
-                                <div class="hero-content">
-                                    <h1 class="hero-headline">
-                                        MindLoops® Maker Space: Serlahkan Bakat Inovasi Anda!
-                                    </h1>
-                                    <br>
-                                    <br>
-                                    <div class="button-container">
-                                        <a target="_blank" href="https://mindloops.org" class=" btn-cta inline-button" style="flex-direction: row; gap: 1em; align-items: center;">Daftar Sekarang</a>
-                                        <a href="./file/Form.zip" download="Form.zip" class=" btn-cta2 inline-button" style="flex-direction: row; gap: 1em; align-items: center;">Muat Turun Borang</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="page-content">
-                <div id="countdown" class="content-container">
-                    <div id="event-countdown">
-                        <h1 class="content-title text-center">Kiraan Detik</h1>
-                        <br>
-                        <div>
-                            <h2 class="subtext text-center">Jangan lepaskan peluang keemasan ini, rasai debaran bersama kami!</h2>
-                        </div>
-                        <div class="countdown-timer">
-                            <div class="countdown-cal">
-                                <h2 class="content-title" id="c-days"></h2>
-                                <p>Hari</p>
-                            </div>
-                            <h2 class="content-title">:</h2>
-                            <div class="countdown-cal">
-                                <h2 class="content-title" id="c-hours"></h2>
-                                <p>Jam</p>
-                            </div>
-                            <h2 class="content-title">:</h2>
-                            <div class="countdown-cal">
-                                <h2 class="content-title" id="c-minutes"></h2>
-                                <p>Minit</p>
-                            </div>
-                            <h2 class="content-title">:</h2>
-                            <div class="countdown-cal">
-                                <h2 class="content-title" id="c-seconds"></h2>
-                                <p>Saat</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-container" id="event-partners-sect">
-                    <div id="event-partners">
-                        <div class="partners-container">
-                            <ul class="partner-list">
-                                <li class="partner">
-                                    <h2 class="subtext"><b>Dengan Kerjasama</b></h1>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Mindloops Maker Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        var countDownDate = new Date("Nov 24, 2024 08:00:00").getTime();
+
+        var x = setInterval(function () {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("c-days").innerHTML = String(days).padStart(2, '0');
+            document.getElementById("c-hours").innerHTML = String(hours).padStart(2, '0');
+            document.getElementById("c-minutes").innerHTML = String(minutes).padStart(2, '0');
+            document.getElementById("c-seconds").innerHTML = String(seconds).padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-head">
+            <div class="hero">
+                <div class="hero-ab">
+                    <div class="hero-nbg">
+                        <div class="page-navbar">
+                            <ul class="navbar">
+                                <li>
+                                    <a href="./index.html">
+                                        <img class="header-logo" src="img/MakerSpaceLogo.png">
+                                    </a>
                                 </li>
-                                <li class="partner">
-                                    <img class="partner-img" src="img/Layer_1.png">
-                                    <!-- <h4 class="subtext">EDESS <br><span style="color: #214669;"><i>Organiser</i></span></h3> -->
-                                </li>
-                                <li class="partner">
-                                    <img class="partner-img" src="img/Group 3.png">
-                                    <!-- <h4 class="subtext">Yayasan JCorp</h3> -->
+                                <li>
+                                    <a class="nav-item" href="./programme.html">
+                                        Program
+                                    </a>
+                                    <a class="nav-item" href="./tentative.html">
+                                        Atur Cara
+                                    </a>
+                                    <a class="nav-item" href="./faqs.html">
+                                        Soalan
+                                    </a>
+                                    <a class="nav-item" href="en/index.html"><img class="" style="width: 1em;"
+                                            src="img/lang.svg"> MY</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="content-container" id="about-sect">
-                    <div class="break-into">
-                        <div>
-                            <h1 class="content-title">Maklumat Program</h1>
-                            <br>
-                            <p>Bersedia untuk serlahkan kreativiti dan kehebatan teknologi anda di pertandingan MindLoops® Maker Space! yang bakal berlangsung di Johor. Program ini mengalu-alukan penyertaan daripada kumpulan murid sekolah rendah yang terdiri daripada 4 ahli kumpulan untuk menjana idea, merancang, dan membangunkan sebuah model yang menakjubkan berpandukan STEM dan TVET. Terokai tema-tema menarik seperti inovasi mesra alam, penyelesaian gaya hidup sihat, kecekapan tenaga, dan lain-lain.</p>
-                            <br>
-                            <p>Program ini disokong kuat oleh Jabatan Pendidikan Negeri Johor (JPNJ) dan Yayasan Zarith Sofea. Ini adalah peluang keemasan anda untuk merealisasikan idea inovatif anda!</p>
-                        </div>
-                        <div class="center-out">
-                            <img class="img-center" id="aliff-cha" src="img/Group 13.png">
-                        </div>
-                    </div>
-                </div>
-                <div id="main-activities-sect" class="content-container">
-                    <div id="main-activities">
-                        <div class="text-center">
-                            <div>
-                                <h1 class="content-title">Adakah Anda Inovator Yang Kami Cari? <br>Sertai Cabaran ini: </h1>
-                                
+                        <div class="hero-container">
+                            <div class="hero-content">
+                                <h1 class="hero-headline">
+                                    MindLoops® Maker Space: Serlahkan Bakat Inovasi Anda!
+                                </h1>
                                 <br>
-                                <div>
-                                    <br>
-
-                                    <img class="img-center roadmap" src="img/Frame 8.png">
+                                <br>
+                                <div class="button-container">
+                                    <a target="_blank" href="https://mindloops.org" class=" btn-cta inline-button"
+                                        style="flex-direction: row; gap: 1em; align-items: center;">Daftar Sekarang</a>
+                                    <a href="./file/Form.zip" download="Form.zip" class=" btn-cta2 inline-button"
+                                        style="flex-direction: row; gap: 1em; align-items: center;">Muat Turun
+                                        Borang</a>
                                 </div>
-                                <br>
-                                <br>
-                                <h3 class="subtext"><b>Bersedia untuk berinovasi? Daftar sekarang dan ambil langkah pertama sebagai batu loncatan untuk menjadi inovator terbaik Malaysia!</b></h3>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="how-to-sect" class="content-container">
-                    <div id="how-to" class="text-center">
-                        <div>
-                            <h1 class="content-title">Cara Mendaftar</h1>
-                            <br>
-                            <video width="560" height="315" controls>
-                                <source src="https://mindloops.org/makerspace/img/Maker%20Space%20Registration.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="footer-info">
-                <div>
-                    <div class="footer-logo-list">
-                        <img class="footer-logo" src="img/MakerSpaceLogo.png">
-                        <a href="https://mindloops.org"><img class="footer-logo" src="img/mindloops.png"></a>
-                        <img class="footer-logo" src="img/wordmark.png">
-                        <div class="text-center">Copyright © 2024 EDESS Education Development and Solutions Specialist Sdn Bhd. All Rights Reserved.</div>
+        <div class="page-content">
+            <div id="countdown" class="content-container">
+                <div id="event-countdown">
+                    <h1 class="content-title text-center">Kiraan Detik</h1>
+                    <br>
+                    <div>
+                        <h2 class="subtext text-center">Jangan lepaskan peluang keemasan ini, rasai debaran bersama
+                            kami!</h2>
+                    </div>
+                    <div class="countdown-timer">
+                        <div class="countdown-cal">
+                            <h2 class="content-title" id="c-days"></h2>
+                            <p>Hari</p>
+                        </div>
+                        <h2 class="content-title">:</h2>
+                        <div class="countdown-cal">
+                            <h2 class="content-title" id="c-hours"></h2>
+                            <p>Jam</p>
+                        </div>
+                        <h2 class="content-title">:</h2>
+                        <div class="countdown-cal">
+                            <h2 class="content-title" id="c-minutes"></h2>
+                            <p>Minit</p>
+                        </div>
+                        <h2 class="content-title">:</h2>
+                        <div class="countdown-cal">
+                            <h2 class="content-title" id="c-seconds"></h2>
+                            <p>Saat</p>
+                        </div>
                     </div>
                 </div>
-            </div> 
-        </footer>
-    </body>
+            </div>
+            <div class="content-container" id="event-partners-sect">
+                <div id="event-partners">
+                    <div class="partners-container">
+                        <ul class="partner-list">
+                            <li class="partner">
+                                <h2 class="subtext"><b>Dengan Kerjasama</b></h1>
+                            </li>
+                            <li class="partner">
+                                <img class="partner-img" src="img/Layer_1.png">
+                                <!-- <h4 class="subtext">EDESS <br><span style="color: #214669;"><i>Organiser</i></span></h3> -->
+                            </li>
+                            <li class="partner">
+                                <img class="partner-img" src="img/Group 3.png">
+                                <!-- <h4 class="subtext">Yayasan JCorp</h3> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container" id="about-sect">
+                <div class="break-into">
+                    <div>
+                        <h1 class="content-title">Maklumat Program</h1>
+                        <br>
+                        <p>Bersedia untuk serlahkan kreativiti dan kehebatan teknologi anda di pertandingan MindLoops®
+                            Maker Space! yang bakal berlangsung di Johor. Program ini mengalu-alukan penyertaan daripada
+                            kumpulan murid sekolah rendah yang terdiri daripada 4 ahli kumpulan untuk menjana idea,
+                            merancang, dan membangunkan sebuah model yang menakjubkan berpandukan STEM dan TVET. Terokai
+                            tema-tema menarik seperti inovasi mesra alam, penyelesaian gaya hidup sihat, kecekapan
+                            tenaga, dan lain-lain.</p>
+                        <br>
+                        <p>Program ini disokong kuat oleh Jabatan Pendidikan Negeri Johor (JPNJ) dan Yayasan Zarith
+                            Sofea. Ini adalah peluang keemasan anda untuk merealisasikan idea inovatif anda!</p>
+                    </div>
+                    <div class="center-out">
+                        <img class="img-center" id="aliff-cha" src="img/Group 13.png">
+                    </div>
+                </div>
+            </div>
+            <div id="main-activities-sect" class="content-container">
+                <div id="main-activities">
+                    <div class="text-center">
+                        <div>
+                            <h1 class="content-title">Adakah Anda Inovator Yang Kami Cari? <br>Sertai Cabaran ini: </h1>
+
+                            <br>
+                            <div>
+                                <br>
+
+                                <img class="img-center roadmap" src="img/Frame 8.png">
+                            </div>
+                            <br>
+                            <br>
+                            <h3 class="subtext"><b>Bersedia untuk berinovasi? Daftar sekarang dan ambil langkah pertama
+                                    sebagai batu loncatan untuk menjadi inovator terbaik Malaysia!</b></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="how-to-sect" class="content-container"></div>
+            <div id="how-to" class="text-center">
+                <div>
+                    <h1 class="content-title">Taklimat Program</h1>
+                    <br>
+                    <iframe width="1200" height="700" src="https://www.youtube.com/embed/bLevSAg2gZQ"
+                        title="Sesi Taklimat MindLoops Maker Space" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div id="how-to-sect" class="content-container">
+            <div id="how-to" class="text-center">
+                <div>
+                    <h1 class="content-title">Cara Mendaftar</h1>
+                    <br>
+                    <video width="70%" height="70%" controls>
+                        <source src="https://mindloops.org/makerspace/img/Maker%20Space%20Registration.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-info">
+            <div>
+                <div class="footer-logo-list">
+                    <img class="footer-logo" src="img/MakerSpaceLogo.png">
+                    <a href="https://mindloops.org"><img class="footer-logo" src="img/mindloops.png"></a>
+                    <img class="footer-logo" src="img/wordmark.png">
+                    <div class="text-center">Copyright © 2024 EDESS Education Development and Solutions Specialist Sdn
+                        Bhd. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
