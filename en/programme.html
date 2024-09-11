@@ -1,328 +1,749 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MakerSpace</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" href="../img/icon.ico" type="image/x-icon" />
-    <style>
-      h1,
-      h2 {
-        color: #214669;
+
+<head>
+  <title>MakerSpace</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../img/icon.ico" type="image/x-icon" />
+  <style>
+    h1,
+    h2 {
+      color: #214669;
+    }
+  </style>
+  <script>
+    //function to show faq on click
+    function showFaq(el) {
+      let faq = document.getElementById(el);
+      if (faq.style.display === "block") {
+        faq.style.display = "none";
+      } else {
+        faq.style.display = "block";
       }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <div class="page-head">
-        <div class="page-navbar-bg">
-          <ul class="navbar">
-            <li>
-              <a href="./index.html">
-                <img class="header-logo" src="../img/MakerSpaceLogo.png" />
-              </a>
+    }
+  </script>
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-head">
+      <div class="page-navbar-bg">
+        <ul class="navbar">
+          <li>
+            <a href="./index.html">
+              <img class="header-logo" src="../img/MakerSpaceLogo.png" />
+            </a>
+          </li>
+          <li>
+            <a class="nav-item" href="./programme.html"> Programme </a>
+            <a class="nav-item" href="./tentative.html"> Itinerary </a>
+            <a class="nav-item" href="./faqs.html"> FAQs </a>
+            <a class="nav-item" href="../programme.html"><img class="" style="width: 1em" src="../img/lang.svg" />
+              EN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div id="tentative" class="content-container">
+        <div id="programme-tentavive">
+          <h1 class="content-title text-center" style="color: #000000 !important">
+            MindLoops® Maker Space Programme Details
+          </h1>
+          <div>
+            <h2 class="subtext text-center">
+              <b>Ignite Young Minds with Innovation!</b>
+            </h2>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div id="programme-overview" class="content-container">
+        <div>
+          <h2 class="subtext text-center" style="color: black !important">
+            <b>Overview</b>
+          </h2>
+          <br />
+          <p class="text-center">
+            MindLoops® Maker Space is an exciting initiative by EDESS and
+            partners, crafted for primary school children. This annual event
+            offers a rich learning experience, focusing on STEM, TVET,
+            Sustainable Development Goals (SDG), and entrepreneurial skills
+            essential for the 21st century. Teams shortlisted can compete in
+            developing innovative models.
+          </p>
+          <br />
+        </div>
+      </div>
+      <div id="programme-highlights" class="content-container">
+        <div>
+          <h2 class="subtext"><b>Programme Highlights</b></h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              <b>STEM and TVET Focus: </b>Engage in activities centred on
+              science, technology, engineering, and technical skills. 
             </li>
-            <li>
-              <a class="nav-item" href="./programme.html"> Programme </a>
-              <a class="nav-item" href="./tentative.html"> Itinerary </a>
-              <a class="nav-item" href="./faqs.html"> FAQs </a>
-              <a class="nav-item" href="../programme.html"
-                ><img class="" style="width: 1em" src="../img/lang.svg" /> EN</a
-              >
+
+            <li class="highlight">
+              <b>Entrepreneurial Skills: </b>Foster innovative thinking and
+              problem-solving. 
+            </li>
+
+            <li class="highlight">
+              <b>21st Century Skills: </b>Develop teamwork, leadership, and
+              digital literacy. 
+            </li>
+
+            <li class="highlight">
+              <b>SDG Integration: </b>Promote sustainable development goals
+              through practical projects and initiatives. 
+            </li>
+          </ul>
+          <br />
+          <br />
+          <h2 class="subtext"><b>Goals</b></h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              Promote STEM, TVET, SDG and entrepreneurial skills. 
+            </li>
+
+            <li class="highlight">
+              Encourage innovation, entrepreneurship, and new technologies. 
+            </li>
+
+            <li class="highlight">Advocate for sustainable practices. </li>
+          </ul>
+          <br />
+          <br />
+          <h2 class="subtext"><b>Mission</b></h2>
+          <br />
+          <p>
+            To create a dynamic environment fostering 21st-century skills
+            through practical STEM and TVET applications, SDG and
+            entrepreneurial thinking.  
+          </p>
+          <br />
+        </div>
+        <div>
+          <img src="../img/Frame 6.png" class="img-center" />
+        </div>
+      </div>
+      <div id="programme-highlights" class="content-container">
+        <div>
+          <img src="../img/Frame 7.png" class="img-center" />
+        </div>
+        <div>
+          <h2 class="subtext"><b>Objectives</b></h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              Cultivate creativity, innovation, and entrepreneurial mindset. 
+            </li>
+
+            <li class="highlight">Enhance teamwork and communication. </li>
+
+            <li class="highlight">
+              Educate on digital literacy and sustainable problem-solving.
+            </li>
+          </ul>
+          <br />
+          <br />
+          <h2 class="subtext"><b>Participant's Criteria</b></h2>
+          <br />
+          <p>
+            This state-level programme targets primary school students aged 10
+            to 12 across all schools in Johor, whether government, private, or
+            international. Each team must consist of 4 members, accompanied by
+            an advising teacher. 
+          </p>
+          <br />
+          <br />
+          <h2 class="subtext"><b>Model Criteria</b></h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              <b>Innovation: </b>Originality of the model. 
+            </li>
+
+            <li class="highlight">
+              <b>Materials: </b>Use recycled materials.
+            </li>
+
+            <li class="highlight">
+              <b>Functionality: </b>Model must align with the theme. 
+            </li>
+
+            <li class="highlight"><b>Safety: </b>Ensure safe use. </li>
+
+            <li class="highlight">
+              <b>Design: </b> Interesting and appropriate design. 
+            </li>
+          </ul>
+          <br />
+        </div>
+      </div>
+      <h1 class="text-center">Timeline</h1>
+      <div class="content-container">
+        <img src="../img/Beige_Minimal_Mind_Map_Timeline_Brainstorm-no-bg.png" class="img">
+      </div>
+      <h1 class="text-center">Programme Stages</h1>
+
+      <div id="programme-stages" class="content-container">
+        <div class="programme-stage">
+          <h2 class="subtext text-center">
+            <b>Stage 1: Idea Conception <br />(6 Weeks Prior to Event Day)</b>
+          </h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              <b>Registration: </b>Sign up to show your interest in
+              participating. 
+            </li>
+
+            <li class="highlight">
+              <b>Briefing: </b> Attending briefing sessions by the
+              accompanying teachers is mandatory.
+            </li>
+
+            <li class="highlight">
+              <b>Research and Innovation: </b>Teams are encouraged to use AI
+              technologies (e.g., ChatGPT, CoPilot, Perplexity) to research
+              and update their ideas. 
+            </li>
+
+            <li class="highlight">
+              <b>Model Selection: </b>Choose suitable models, functionalities,
+              and recycled materials. 
+            </li>
+
+            <li class="highlight">
+              <b>Submission: </b> Teams must submit detailed model ideas using
+              the provided Maker Space Model Planning form. 
+            </li>
+
+            <li class="highlight">
+              <b>Selection: </b> The top 22 innovative teams will be selected
+              to advance to the final stage. 
+            </li>
+          </ul>
+        </div>
+        <div class="programme-stage">
+          <h2 class="subtext text-center">
+            <b>Stage 2: Development Stage <br />(Event Day)</b>
+          </h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              <b>Participants: </b>22 finalist teams. 
+            </li>
+
+            <li class="highlight">
+              <b>Duration: </b>2 hours to develop the model.
+            </li>
+
+            <li class="highlight">
+              <b>Materials: </b>Teams bring their own recycled materials and
+              tools; essential tools like glue, scissors, and tapes are
+              provided. 
+            </li>
+
+            <li class="highlight">
+              <b>Task Division: </b>Flexible, depending on situational needs;
+              teamwork is crucial. 
+            </li>
+
+            <li class="highlight">
+              <b>Presentation: </b>Each team must have a representative to
+              present the Entrepreneurial Concept based on the Business Canvas
+              for 5 minutes during the build.
+            </li>
+
+            <li class="highlight">
+              <b>Testing: </b> Teams check and test models before presenting
+              to judges and the audience. 
+            </li>
+          </ul>
+        </div>
+        <div class="programme-stage">
+          <h2 class="subtext text-center">
+            <b>Stage 3: Presentation <br />(Event Day)</b>
+          </h2>
+          <br />
+          <ul>
+            <li class="highlight">
+              <b>Presentation: </b>Each team must have a representative to
+              present their model to the judges. 
+            </li>
+
+            <li class="highlight">
+              <b>Duration: </b>5 minutes for each presentation (5-Minute
+              Pitch).
+            </li>
+
+            <li class="highlight">
+              <b>Skills: </b>The presenter must demonstrate excellent, clear,
+              and effective communication skills. 
             </li>
           </ul>
         </div>
       </div>
-      <div>
-        <div id="tentative" class="content-container">
-          <div id="programme-tentavive">
-            <h1
-              class="content-title text-center"
-              style="color: #000000 !important"
-            >
-              MindLoops® Maker Space Programme Details
-            </h1>
-            <div>
-              <h2 class="subtext text-center">
-                <b>Ignite Young Minds with Innovation!</b>
-              </h2>
+      <div class="content-container" style="padding-top: 0">
+        <h1 class="text-center">Model Themes</h1>
+        <br />
+        <div>
+          <ul class="themes-list">
+            <li>
+              Eco-friendly innovations
+              <hr>
+              SDG 9 & SDG 12
+            </li>
+
+            <li>
+              Healthy living solutions
+              <hr>
+              SDG 3
+            </li>
+
+            <li>
+              Sustainable gardening
+              <hr>
+              SDG 2 & SDG 15
+            </li>
+
+            <li>
+              Fashion and accessories
+              <hr>
+              SDG 12
+            </li>
+
+            <li>
+              Wildlife and nature conversation
+              <hr>
+              SDG 3
+            </li>
+
+            <li>
+              Energy efficiency
+              <hr>
+              SDG 7 & SDG 13
+            </li>
+
+            <li>
+              Recycling and upcycling
+              <hr>
+              SDG 12 & SDG 13
+            </li>
+
+            <li>
+              Water conservation
+              <hr>
+              SDG 6
+            </li>
+
+            <li>
+              Environmental awareness
+              <hr>
+              SDG 13 & SDG 15
+            </li>
+
+            <li>
+              Community impact projects
+              <hr>
+              SDG 11 & SDG 16
+            </li>
+          </ul>
+        </div>
+        <br />
+      </div>
+      <div class="content-container">
+        <div id="faqs" style="font-size: 24px !important">
+          <h1 class="content-title">Sustainable Development Goals (SDG)</h1>
+          <br />
+          <br />
+          <br />
+          <div class="faqs">
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">1. No Poverty</h2>
+                <button class="faq-button" onclick="showFaq('s1')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s1" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to end poverty in every shape and form, all over the world. Solving the type of poverty
+                  where people don’t have enough to eat in order to live is the first step. This goal goes beyond just
+                  food and water; it also includes making sure everyone has work and a place to live, access to
+                  hospitals, and the opportunity to say what they think or to use the skills they have.
+                </p>
+              </div>
+              <br />
+              <hr />
             </div>
-            <br />
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">2. Zero Hunger </h2>
+                <button class="faq-button" onclick="showFaq('s2')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s2" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  Starvation is a state of malnutrition that occurs when you haven’t eaten properly for a long time.
+                  This goal is to make sure everyone, from children to the elderly, gets enough food with sufficient
+                  nutrition. The goal is to preserve the environment and crop diversity (having lots of different types
+                  of things available), while increasing stable food production.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">3. Good Health and Well-Being</h2>
+
+                <button class="faq-button" onclick="showFaq('s3')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s3" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is for everyone to be healthy, to prevent disease, and to have access to adequate medical
+                  treatment. Women should be able to have babies safely, and medicines or vaccines should be available
+                  to everyone. This goal also includes reducing injuries or deaths due to accidents and contamination of
+                  air, water, and land.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  4. Quality Education
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s4')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s4" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to provide equal education of high quality to everyone, with lifelong opportunities for
+                  learning. Providing safe, easily accessible schools and increasing the number of qualified teachers
+                  will help achieve this. It’s important to continue education even in the middle of conflict and
+                  disaster.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  5. Gender Equality
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s5')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s5" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to empower women and girls to stop discrimination against them. Ways of doing this include
+                  preventing physical, emotional, and sexual harm to women; valuing work done in the home; protecting
+                  women’s rights relating to pregnancy and childbirth; and encouraging equal participation in politics,
+                  economics, and so on.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  6. Clean Water and Sanitation
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s6')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s6" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to provide everyone with clean water and a healthy environment through proper hygiene
+                  management. This makes good water management and garbage disposal for everyone and steps to reuse
+                  water essential.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  7. Affordable and Clean Energy
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s7')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s7" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to provide reliable, low-priced energy to everyone, not just from wood or coal but also
+                  from new sources of electricity or gas. Making greater use of clean, renewable energy (such as
+                  sunlight, the wind, flowing rivers, and ocean tides) and increasing energy efficiency are key.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  8. Decent Work and Economic Growth
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s8')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s8" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  Decent work means everyone having access to fulfilling work that benefits economic growth while
+                  protecting natural resources. The goal is to end child labor that mentally and physically harms
+                  children under the age of 18 who are forced to work.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  9. Industry, Innovation and Infrastructure
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s9')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s9" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  Infrastructure means the buildings, transport, services and so on that people need in their daily
+                  lives. More examples are water supply, railroads, gas, electricity, and the Internet. The goal is to
+                  build disaster-proof infrastructure, encourage sustainable and inclusive economic development, and
+                  make it easier to come up with new technologies.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  10. Reduced Inequalities
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s10')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s10" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to reduce inequality or differences both between countries and inside countries.
+                  Inequality can be eliminated by raising the incomes of poor people and getting rid of laws and
+                  practices that discriminate against particular types of people.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  11. Sustainable Cities and Communities
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s11')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s11" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to create cities and communities where everyone lives in safe, good- quality housing with
+                  access to water, electricity, and other essential services. Communities must be resilient against
+                  disasters. And they must monitor air pollution and waste management while providing safe and easy
+                  access to services for children, the elderly, and other vulnerable people.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  12. Responsible Consumption and Production
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s12')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s12" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to make sure resources are not wasted when things are made and used. Important ways of
+                  achieving this include halving food waste worldwide; monitoring harmful chemicals that are discharged
+                  when making things to prevent water, air, and soil contamination; and adopting the Three R’s (reduce,
+                  reuse, recycle) to minimize waste.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  13. Climate Action
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s13')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s13" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  Climate change is happening because emissions of carbon dioxide (CO2) and
+
+                  other substances create by humans that effect the earth and its weather. The focus is on taking action
+                  now to prepare for climate change problems and the natural disasters it will cause.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  14. Life Below Water
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s14')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s14" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  Most ocean pollution is caused by things people do on land. The goal is to reduce pollution of the
+                  ocean, end illegal fishing that harms the environment, and make sure the resources of the sea can be
+                  used sustainably.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  15. Life On Land
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s15')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s15" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  Protecting forests and stopping desert expansion are important for preserving and regenerating land
+                  ecosystems (in other words, animals and the environments they live in) and for using them in a
+                  sustainable way. Endangered species must be protected and the loss of biodiversity must be prevented.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  16. Peace, Justice and Strong Institutions
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s16')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s16" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to create peaceful and inclusive societies in which everyone has access to the law (courts
+                  and legal procedures), and to ensure that just institutions are active at the community, country, and
+                  global levels.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
+            <div class="faq">
+              <div class="faq-block">
+                <h2 class="subtext">
+                  17. Partnerships For the Goals
+                </h2>
+
+                <button class="faq-button" onclick="showFaq('s17')">
+                  <img src="../img/add.svg" />
+                </button>
+              </div>
+              <div id="s17" style="display: none">
+                <br />
+                <p class="subtext" style="font-size: 24px">
+                  The goal is to make sure that all countries work together to achieve Goals 1 to 16. The SDGs must be
+                  included in national plans while greater steps are taken to attain them. Each country needs to think
+                  about what actions it can take and how it can use its financial resources to achieve the goals.
+                  Developed countries can help developing countries in their efforts.
+                </p>
+              </div>
+              <br />
+              <hr />
+            </div>
           </div>
-        </div>
-        <div id="programme-overview" class="content-container">
-          <div>
-            <h2 class="subtext text-center" style="color: black !important">
-              <b>Overview</b>
-            </h2>
-            <br />
-            <p class="text-center">
-              MindLoops® Maker Space is an exciting initiative by EDESS and
-              partners, crafted for primary school children. This annual event
-              offers a rich learning experience, focusing on STEM, TVET,
-              Sustainable Development Goals (SDG), and entrepreneurial skills
-              essential for the 21st century. Teams shortlisted can compete in
-              developing innovative models.
-            </p>
-            <br />
-          </div>
-        </div>
-        <div id="programme-highlights" class="content-container">
-          <div>
-            <h2 class="subtext"><b>Programme Highlights</b></h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                <b>STEM and TVET Focus: </b>Engage in activities centred on
-                science, technology, engineering, and technical skills. 
-              </li>
-
-              <li class="highlight">
-                <b>Entrepreneurial Skills: </b>Foster innovative thinking and
-                problem-solving. 
-              </li>
-
-              <li class="highlight">
-                <b>21st Century Skills: </b>Develop teamwork, leadership, and
-                digital literacy. 
-              </li>
-
-              <li class="highlight">
-                <b>SDG Integration: </b>Promote sustainable development goals
-                through practical projects and initiatives. 
-              </li>
-            </ul>
-            <br />
-            <br />
-            <h2 class="subtext"><b>Goals</b></h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                Promote STEM, TVET, SDG and entrepreneurial skills. 
-              </li>
-
-              <li class="highlight">
-                Encourage innovation, entrepreneurship, and new technologies. 
-              </li>
-
-              <li class="highlight">Advocate for sustainable practices. </li>
-            </ul>
-            <br />
-            <br />
-            <h2 class="subtext"><b>Mission</b></h2>
-            <br />
-            <p>
-              To create a dynamic environment fostering 21st-century skills
-              through practical STEM and TVET applications, SDG and
-              entrepreneurial thinking.  
-            </p>
-            <br />
-          </div>
-          <div>
-            <img src="../img/Frame 6.png" class="img-center" />
-          </div>
-        </div>
-        <div id="programme-highlights" class="content-container">
-          <div>
-            <img src="../img/Frame 7.png" class="img-center" />
-          </div>
-          <div>
-            <h2 class="subtext"><b>Objectives</b></h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                Cultivate creativity, innovation, and entrepreneurial mindset. 
-              </li>
-
-              <li class="highlight">Enhance teamwork and communication. </li>
-
-              <li class="highlight">
-                Educate on digital literacy and sustainable problem-solving.
-              </li>
-            </ul>
-            <br />
-            <br />
-            <h2 class="subtext"><b>Participant's Criteria</b></h2>
-            <br />
-            <p>
-              This state-level programme targets primary school students aged 10
-              to 12 across all schools in Johor, whether government, private, or
-              international. Each team must consist of 4 members, accompanied by
-              an advising teacher. 
-            </p>
-            <br />
-            <br />
-            <h2 class="subtext"><b>Model Criteria</b></h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                <b>Innovation: </b>Originality of the model. 
-              </li>
-
-              <li class="highlight">
-                <b>Materials: </b>Use recycled materials.
-              </li>
-
-              <li class="highlight">
-                <b>Functionality: </b>Model must align with the theme. 
-              </li>
-
-              <li class="highlight"><b>Safety: </b>Ensure safe use. </li>
-
-              <li class="highlight">
-                <b>Design: </b> Interesting and appropriate design. 
-              </li>
-            </ul>
-            <br />
-          </div>
-        </div>
-        <h1 class="text-center">Programme Stages</h1>
-
-        <div id="programme-stages" class="content-container">
-          <div class="programme-stage">
-            <h2 class="subtext text-center">
-              <b>Stage 1: Idea Conception <br />(6 Weeks Prior to Event Day)</b>
-            </h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                <b>Registration: </b>Sign up to show your interest in
-                participating. 
-              </li>
-
-              <li class="highlight">
-                <b>Briefing: </b> Attending briefing sessions by the
-                accompanying teachers is mandatory.
-              </li>
-
-              <li class="highlight">
-                <b>Research and Innovation: </b>Teams are encouraged to use AI
-                technologies (e.g., ChatGPT, CoPilot, Perplexity) to research
-                and update their ideas. 
-              </li>
-
-              <li class="highlight">
-                <b>Model Selection: </b>Choose suitable models, functionalities,
-                and recycled materials. 
-              </li>
-
-              <li class="highlight">
-                <b>Submission: </b> Teams must submit detailed model ideas using
-                the provided Maker Space Model Planning form. 
-              </li>
-
-              <li class="highlight">
-                <b>Selection: </b> The top 22 innovative teams will be selected
-                to advance to the final stage. 
-              </li>
-            </ul>
-          </div>
-          <div class="programme-stage">
-            <h2 class="subtext text-center">
-              <b>Stage 2: Development Stage <br />(Event Day)</b>
-            </h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                <b>Participants: </b>22 finalist teams. 
-              </li>
-
-              <li class="highlight">
-                <b>Duration: </b>2 hours to develop the model.
-              </li>
-
-              <li class="highlight">
-                <b>Materials: </b>Teams bring their own recycled materials and
-                tools; essential tools like glue, scissors, and tapes are
-                provided. 
-              </li>
-
-              <li class="highlight">
-                <b>Task Division: </b>Flexible, depending on situational needs;
-                teamwork is crucial. 
-              </li>
-
-              <li class="highlight">
-                <b>Presentation: </b>Each team must have a representative to
-                present the Entrepreneurial Concept based on the Business Canvas
-                for 5 minutes during the build.
-              </li>
-
-              <li class="highlight">
-                <b>Testing: </b> Teams check and test models before presenting
-                to judges and the audience. 
-              </li>
-            </ul>
-          </div>
-          <div class="programme-stage">
-            <h2 class="subtext text-center">
-              <b>Stage 3: Presentation <br />(Event Day)</b>
-            </h2>
-            <br />
-            <ul>
-              <li class="highlight">
-                <b>Presentation: </b>Each team must have a representative to
-                present their model to the judges. 
-              </li>
-
-              <li class="highlight">
-                <b>Duration: </b>5 minutes for each presentation (5-Minute
-                Pitch).
-              </li>
-
-              <li class="highlight">
-                <b>Skills: </b>The presenter must demonstrate excellent, clear,
-                and effective communication skills. 
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="content-container" style="padding-top: 0">
-          <h1 class="text-center">Model Themes</h1>
-          <br />
-          <div>
-            <ul class="themes-list">
-              <li>Eco-friendly innovations</li>
-
-              <li>Healthy living solutions</li>
-
-              <li>Sustainable gardening</li>
-
-              <li>Fashion and accessories</li>
-
-              <li>Wildlife and nature conversation</li>
-
-              <li>Energy efficiency</li>
-
-              <li>Recycling and upcycling</li>
-
-              <li>Water conservation</li>
-
-              <li>Environmental awareness</li>
-
-              <li>Community impact projects</li>
-            </ul>
-          </div>
-          <br />
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-info">
-        <div>
-          <div class="footer-logo-list">
-            <img class="footer-logo" src="../img/MakerSpaceLogo.png" />
-            <a href="https://mindloops.org"
-              ><img class="footer-logo" src="../img/mindloops.png"
-            /></a>
-            <img class="footer-logo" src="../img/wordmark.png" />
-            <div class="text-center">
-              Copyright © 2024 EDESS Education Development and Solutions
-              Specialist Sdn Bhd. All Rights Reserved.
-            </div>
+  </div>
+  <footer>
+    <div class="footer-info">
+      <div>
+        <div class="footer-logo-list">
+          <img class="footer-logo" src="../img/MakerSpaceLogo.png" />
+          <a href="https://mindloops.org"><img class="footer-logo" src="../img/mindloops.png" /></a>
+          <img class="footer-logo" src="../img/wordmark.png" />
+          <div class="text-center">
+            Copyright © 2024 EDESS Education Development and Solutions
+            Specialist Sdn Bhd. All Rights Reserved.
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
